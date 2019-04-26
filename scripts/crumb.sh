@@ -14,7 +14,7 @@ PASS=$3
 
 if [ "$1" == ""] && [ "$2" == ""]; then
   echo "Usage: $0 <JENKINS_URL> <USER> <PASS> <JOB_NAME> [PARAM] [QUERY_PARAMETERS] "
-  echo "Eg. # $0 'https://jenkins.server.com' 'MYSQL_HOST=db_host.com&DB_NAME=db_production'"
+  echo "Eg. # $0 'https://jenkins.server.com' jenkins 123456 production-job PARAM 'MYSQL_HOST=host.com&DB_NAME=db_production'"
   exit 0
 else
   # Get the Crumb to Pass as Header
